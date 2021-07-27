@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/planta-da-casa.png" type="image/x-icon">
+    <link rel="stylesheet" href="main.css" type="text/css">
+    <script defer src="main.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <title>Compre a casa dos seus sonhos</title>
+</head>
+<div id="text" class="first-column"> <!--CTA-->
+ <div class="article-box">
+  <h1>Venha realizar seu maior sonho!!!</h1>  
+  <p>Com nossos novos lançamentos,<br> você vai descobrir, que nunca ficou tão fácil comprar uma casa na área mais nobre de toda a região.</p> 
+   <img src="images/planta-da-casa.png" alt="logo da empresa">
+ </div>
+</div>
+<section class="second-column"> <!--Formulary-->
+<form id="formulary" class="forms" name="formulario" onsubmit="return(verify())">
+ <label  for="name">
+  <p>Nome:</p>
+  <input type="text" class="box" placeholder="nome...">  
+ </label> 
+ <label for="phone-number">
+  <p>Número de telefone:</p>
+  <input type="text" class="box" onblur="phoneMask(this)" onfocus="tiraHifen(this)" placeholder="número de telefone">  
+ </label> 
+ <label for="email">
+  <p>Email:</p>
+  <input type="email" id="email" class="box" onblur="checarEmail()" placeholder="Email">  
+ </label>
+ <label class="input-options">
+  <p>Você está a procura de?</p>  
+  <input value="casa" type="checkbox" class="options-options"> Casa
+  <input value="Apartamento" type="checkbox" class="options-options"> Apartamentos
+  <input value="Lançamentos" type="checkbox" class="options-options"> Lançamentos 
+  <input value="Terrenos" type="checkbox" class="options-options"> Terrenos
+ </label>
+ <button type="button" onclick="sended()">Enviar</button> 
+</form>
+</section>
+<body> 
+</body>
+</html>
